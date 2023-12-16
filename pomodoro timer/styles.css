@@ -1,0 +1,140 @@
+*{
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;   
+}
+
+body{
+    background-color: #241f46;
+    padding: 10px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+h1{
+    font-size: xx-large;
+    color: aliceblue;
+    position: absolute;
+    top: 3%;
+    text-shadow: #c266a7;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #F08A5D; */
+    background-color: #0d0b33;
+    width: min(35rem, 100%);
+    height: min(47rem,100%);
+    margin-inline: auto;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3rem;
+    box-shadow: 3.9px 7.8px 7.8px hsla(0, 0%, 0%, 0.317)
+}
+
+i{
+    font-size: 3.2rem;
+}
+
+.selection-container{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.selection-container button{
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    background-color: #52489f;
+    font-size: 1rem;
+    color: #edf5e1;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #c266a7;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: #efc8e3;
+
+}
+
+.time{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    font-weight: 550;
+}
+
+.time p{
+    font-size: 5rem;
+}
+
+.time p:nth-of-type(2){
+    position: relative;
+    top: -.5rem;
+    margin-inline: 1rem;
+}
+
+
+.controls{
+    position: absolute;
+    top: 110%;
+    padding-block: 1rem;
+}
+
+.controls button{
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    justify-content:space-around;
+    background-color: #52489f;
+    border-color: #0d0b33;
+    border-style: solid;
+}
+
+.controls button:hover{
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #52489f;
+    border-color: #0d0b33;
+    border-style: solid;
+}
+.controls button {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #52489f;
+    border-color: #0d0b33;
+    border-style: solid;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #0d0b33;
+    border-color: #52489f;
+}

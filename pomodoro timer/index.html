@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container glass">
+        <h1>P O M O D O R O</h1>
+
+        <div class="selection-container">
+            <button id="btn-focus" class="btn-focus">Focus Time</button>
+            <button id="btn-shortbreak" class="btn-shortbreak" >Short Break</button>
+            <button id="btn-longbreak" class="btn-longbreak">Long Break</button>
+        </div>
+        
+        <div class="timer">
+            <div class="circle">
+                <div class="time">
+                    <p id="minutes">25</p>
+                    <p>:</p>
+                    <p id="seconds">00</p>
+                </div>
+
+                <div class="controls">
+                    <button id="btn-start" onclick="startTimer()">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="btn-pause" onclick="pauseTimer()">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                    <button id="btn-reset" onclick="resetTimer()">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
